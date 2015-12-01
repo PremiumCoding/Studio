@@ -4,7 +4,7 @@
 add_action('init', 'js_inc_function');
 add_theme_support( 'post-formats', array( 'link', 'gallery', 'video' , 'audio') );
 add_theme_support( 'automatic-feed-links' );
-
+require( get_template_directory() . '/updater/theme-updater.php' );
 
 /*-----------------------------------------------------------------------------------*/
 // Options Framework
