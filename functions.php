@@ -6,6 +6,18 @@ add_theme_support( 'post-formats', array( 'link', 'gallery', 'video' , 'audio') 
 add_theme_support( 'automatic-feed-links' );
 require( get_template_directory() . '/updater/theme-updater.php' );
 
+
+function pmc_dont_update_theme( $r, $url ) {
+ if ( 0 !== strpos( $url, 'https://api.wordpress.org/themes/update-check/1.1/' ) )
+   return $r; // Not a theme update request. Bail immediately.
+  $themes = json_decode( $r['body']['themes'] );
+  $child = get_option( 'stylesheet' );
+ unset( $themes->themes->$child );
+  $r['body']['themes'] = json_encode( $themes );
+  return $r;
+ }
+ add_filter( 'http_request_args', 'pmc_dont_update_theme', 5, 2 );
+ 
 /*-----------------------------------------------------------------------------------*/
 // Options Framework
 /*-----------------------------------------------------------------------------------*/
