@@ -141,7 +141,7 @@ header{adding: 0; width: 100%; display: block; text-align:center;}
 .respMenu {display:none;}
 .menu li {   float: left !important; position: relative; }
 .menu li a { display: block; position: relative; text-decoration: none; }
-#header ul.menu > li > a { height:25px; }
+#header ul.menu > li > a { height:40px; }
 .menu li li {margin-left:0px; }
 .menu > li a strong { display: block;    letter-spacing: normal; font-size: 24px;text-transform:uppercase; padding-right:20px;padding-left:20px;font-weight:normal !important;}
 .menu li a span { display: block; font-size: 20px; color:#2a2b2c!important;   }
@@ -151,7 +151,7 @@ header{adding: 0; width: 100%; display: block; text-align:center;}
 .menu  ul { }
 .menu li:hover a, .menu li.current a { color: #111; }
 .menu li ul{position:absolute;display:none;}
-.menu li ul { left: 20px; top: 39px; z-index: 99;  width: 205px; z-index: 8; opacity:0.97;}
+.menu li ul { left: 0px; top: 39px; z-index: 99;  width: 205px; z-index: 8; opacity:0.97;}
 .menu li ul li a {background:none; border-right: none; border-left: none;padding-right: 0px; margin-right: 0px; }
 .menu li li ul { top: -999em }
 .menu li li:hover ul { left: 200px; top: 0; }
