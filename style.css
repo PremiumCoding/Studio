@@ -1,7 +1,7 @@
 /*  
 Theme Name:Studio
 Description:Studio - Studio Wordpress Theme
-Version:1.0.1
+Version:1.1
 Author:Premiumcoding
 Theme URI:http://premiumcoding.com/
 Author URI:http://premiumcoding.com/
@@ -146,7 +146,7 @@ header{adding: 0; width: 100%; display: block; text-align:center;}
 .menu > li a strong { display: block;    letter-spacing: normal; font-size: 24px;text-transform:uppercase; padding-right:20px;padding-left:20px;font-weight:normal !important;}
 .menu li a span { display: block; font-size: 20px; color:#2a2b2c!important;   }
 .menu li:last-child a span {display:none;}
-.separatorMenu {position:relative;float:right;width:10px;margin-top: -41px;}
+.separatorMenu {position:relative;float:right;width:10px;margin:0 20px 0 10px}
 .menu  ul .separatorMenu{display:none !important;}
 .menu  ul { }
 .menu li:hover a, .menu li.current a { color: #111; }

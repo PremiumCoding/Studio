@@ -113,7 +113,7 @@
 							 'link_before' => '',
 							 'link_after' => '<span class="separatorMenu">//</span>',
 							 'depth' => 0,
-							 'walker' => new description_walker())
+							 'walker' => new Walker_Main_Menu())
 							 ); 
 						}
 						?>
